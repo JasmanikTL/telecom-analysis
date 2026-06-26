@@ -149,6 +149,6 @@ Para reproducir correctamente el análisis:
 
 **Jasmanik**
 
-Estudiante del programa de **Data Science de TripleTen**.
+Estudiante del programa de **Análisis de datos de TripleTen**.
 
 GitHub: https://github.com/JasmanikTL
