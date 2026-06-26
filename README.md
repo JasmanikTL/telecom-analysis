@@ -100,7 +100,7 @@ telecom-analysis/
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/TU_USUARIO/telecom-analysis.git
+git clone https://github.com/JasmanikTL/telecom-analysis.git
 ```
 
 2. Entrar al proyecto:
