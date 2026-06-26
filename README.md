@@ -1,33 +1,40 @@
-# Proyecto 6 – Análisis de una empresa de telecomunicaciones (ConnectaTel)
+# 📊 Proyecto 6 – Análisis de una empresa de telecomunicaciones (ConnectaTel)
 
 ## Descripción
 
-Este proyecto tiene como objetivo analizar el comportamiento de los clientes de ConnectaTel, una empresa de telecomunicaciones con operaciones en Latinoamérica. A partir de información de usuarios, planes y registros de uso de llamadas y mensajes, se realizó un proceso completo de exploración, limpieza, análisis estadístico y segmentación de clientes para identificar patrones de consumo y generar recomendaciones para el negocio.
+Este proyecto desarrolla un análisis exploratorio de datos (EDA) sobre el comportamiento de los clientes de **ConnectaTel**, una empresa de telecomunicaciones con operaciones en Latinoamérica.
+
+A partir de información sobre planes, clientes y registros de uso de llamadas y mensajes, se realizó un proceso completo de exploración, limpieza, análisis estadístico, visualización y segmentación de clientes con el propósito de identificar patrones de consumo, detectar valores atípicos y generar recomendaciones que apoyen la toma de decisiones del negocio.
 
 ---
 
-## Objetivos
+# 🎯 Objetivo del proyecto
 
-- Explorar la estructura y calidad de los datos.
-- Detectar y corregir valores inválidos, sentinels y fechas fuera de rango.
-- Analizar el comportamiento de uso de llamadas y mensajes por usuario.
-- Identificar valores atípicos mediante el método IQR.
-- Segmentar a los clientes por nivel de uso y grupo de edad.
-- Generar visualizaciones e insights para apoyar la toma de decisiones.
+Analizar el comportamiento de los clientes de ConnectaTel mediante técnicas de análisis exploratorio de datos para:
 
----
-
-## Datasets utilizados
-
-- **plans.csv:** Información de los planes disponibles (precio, minutos, mensajes y GB incluidos).
-- **users_latam.csv:** Información de los clientes (edad, ciudad, fecha de registro, plan contratado y fecha de cancelación).
-- **usage.csv:** Registros históricos de llamadas y mensajes realizados por los usuarios.
+- Identificar patrones de uso de llamadas y mensajes.
+- Detectar problemas de calidad en los datos.
+- Encontrar valores atípicos (outliers).
+- Segmentar a los clientes según su nivel de uso y grupo de edad.
+- Generar recomendaciones comerciales basadas en los resultados obtenidos.
 
 ---
 
-## Herramientas utilizadas
+# 📁 Datasets utilizados
 
-- Python
+El proyecto utiliza tres conjuntos de datos:
+
+| Dataset | Descripción |
+|----------|-------------|
+| **plans.csv** | Información de los planes disponibles, incluyendo precio mensual, minutos, mensajes y GB incluidos. |
+| **users_latam.csv** | Información de los clientes, como edad, ciudad, fecha de registro, plan contratado y fecha de cancelación. |
+| **usage.csv** | Registros históricos del uso de llamadas y mensajes de cada usuario. |
+
+---
+
+# 🛠️ Herramientas utilizadas
+
+- Python 3
 - Pandas
 - NumPy
 - Matplotlib
@@ -36,32 +43,48 @@ Este proyecto tiene como objetivo analizar el comportamiento de los clientes de 
 
 ---
 
-## Principales hallazgos
+# 📈 Etapas del análisis
 
-- Se detectaron valores inválidos en la edad (`-999`), ciudades desconocidas (`?`) y fechas de registro fuera del periodo de estudio.
-- Los valores nulos en llamadas y mensajes dependen del tipo de actividad, por lo que corresponden al comportamiento esperado del dataset.
-- La mayoría de los clientes pertenece al grupo de **Uso medio**.
-- El grupo de edad predominante corresponde a **Adultos (30–59 años)**.
-- Las variables de consumo presentan distribuciones sesgadas hacia la derecha y algunos valores atípicos, los cuales representan comportamientos reales de usuarios y se conservaron para el análisis.
+El proyecto se desarrolló siguiendo las siguientes etapas:
 
----
-
-## Recomendaciones
-
-- Diseñar planes específicos para usuarios de alto consumo.
-- Crear promociones dirigidas a usuarios de bajo uso para incrementar su actividad.
-- Mantener una oferta competitiva para el segmento de uso medio, que representa la mayor parte de la cartera de clientes.
-- Utilizar la segmentación por edad para desarrollar campañas comerciales más focalizadas.
+1. Carga y exploración de los datasets.
+2. Identificación de problemas de calidad de los datos.
+3. Limpieza de datos y tratamiento de valores inválidos.
+4. Análisis estadístico descriptivo.
+5. Visualización de distribuciones y detección de valores atípicos mediante Boxplots.
+6. Segmentación de clientes por:
+   - Nivel de uso.
+   - Grupo de edad.
+7. Elaboración de insights ejecutivos y recomendaciones para el negocio.
 
 ---
 
-## Estructura del repositorio
+# 📌 Principales resultados
 
-```
-Proyecto6_ConnectaTel/
+- Se identificaron valores inválidos en la variable **edad**, ciudades desconocidas y fechas fuera del periodo de análisis.
+- Los valores nulos en las variables **duration** y **length** corresponden al tipo de actividad (llamada o mensaje), por lo que representan el comportamiento esperado del dataset.
+- La mayoría de los clientes pertenece al segmento de **Uso medio**.
+- El grupo de edad predominante corresponde a los **Adultos (30–59 años)**.
+- Las variables relacionadas con el consumo presentan distribuciones sesgadas hacia la derecha y algunos valores atípicos, los cuales representan usuarios con consumos elevados y fueron conservados para el análisis.
+
+---
+
+# 💡 Recomendaciones
+
+- Diseñar planes específicos para usuarios con alto consumo de llamadas y mensajes.
+- Crear promociones dirigidas a usuarios con bajo nivel de uso para incentivar un mayor consumo.
+- Mantener una oferta competitiva para los usuarios de uso medio, ya que representan la mayor parte de la base de clientes.
+- Aprovechar la segmentación por edad para desarrollar campañas comerciales dirigidas principalmente al segmento de adultos.
+
+---
+
+# 📂 Estructura del proyecto
+
+```text
+telecom-analysis/
 │
-├── Proyecto6_ConnectaTel.ipynb
 ├── README.md
+├── sprint7-final-project.ipynb
 └── datasets/
     ├── plans.csv
     ├── users_latam.csv
@@ -70,21 +93,62 @@ Proyecto6_ConnectaTel/
 
 ---
 
-## Cómo ejecutar el proyecto
+# ▶️ Cómo ejecutar el proyecto
 
-1. Clonar el repositorio.
-2. Instalar las dependencias:
+## Opción 1: Jupyter Notebook
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/TU_USUARIO/telecom-analysis.git
+```
+
+2. Entrar al proyecto:
+
+```bash
+cd telecom-analysis
+```
+
+3. Instalar las dependencias:
 
 ```bash
 pip install pandas numpy matplotlib seaborn
 ```
 
-3. Abrir el notebook en Jupyter Notebook o Google Colab.
-4. Ejecutar todas las celdas en orden.
+4. Abrir el notebook:
+
+```bash
+jupyter notebook
+```
+
+5. Ejecutar todas las celdas en orden.
 
 ---
 
-## Autor
+## Opción 2: Google Colab
 
-Jasmanik
-Doctorado en Robótica – Universidad Tecnológica de la Mixteca
+1. Descargar el repositorio o clonarlo desde GitHub.
+2. Subir el notebook a Google Colab.
+3. Subir la carpeta **datasets** al entorno de Colab.
+4. Verificar que las rutas de lectura de los archivos correspondan a la ubicación de los datasets.
+5. Ejecutar todas las celdas del notebook.
+
+---
+
+# 🔄 Guía de reproducción
+
+Para reproducir correctamente el análisis:
+
+1. Mantener la estructura de carpetas mostrada anteriormente.
+2. Verificar que los archivos **plans.csv**, **users_latam.csv** y **usage.csv** se encuentren dentro de la carpeta **datasets**.
+3. Ejecutar el notebook desde la primera hasta la última celda sin omitir pasos.
+
+---
+
+# 👤 Autor
+
+**Jasmanik**
+
+Estudiante del programa de **Data Science de TripleTen**.
+
+GitHub: https://github.com/JasmanikTL
