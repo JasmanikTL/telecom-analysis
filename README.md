@@ -95,45 +95,74 @@ telecom-analysis/
 
 # ▶️ Cómo ejecutar el proyecto
 
-## Opción 1: Jupyter Notebook
+## Opción 1: Google Colab
 
-1. Clonar el repositorio:
+### Usando Git (recomendado)
+
+1. Abre Google Colab.
+2. Abre una celda y clona el repositorio:
+
+```bash
+!git clone https://github.com/JasmanikTL/telecom-analysis.git
+```
+
+3. Accede a la carpeta del proyecto:
+
+```python
+%cd telecom-analysis
+```
+
+4. Abre el archivo `telecom_analysis.ipynb`.
+5. Ejecuta todas las celdas del notebook.
+
+> **Alternativa:** Si no deseas usar Git, descarga el repositorio en formato ZIP, descomprímelo y sube el notebook junto con la carpeta `datasets` a Google Colab.
+
+---
+
+## Opción 2: Jupyter Online
+
+### Usando Git (recomendado)
+
+1. Abre tu entorno de Jupyter Online.
+2. Clona el repositorio:
 
 ```bash
 git clone https://github.com/JasmanikTL/telecom-analysis.git
 ```
 
-2. Entrar al proyecto:
+3. Abre la carpeta `telecom-analysis`.
+4. Abre `telecom_analysis.ipynb`.
+5. Ejecuta todas las celdas.
+
+> **Alternativa:** Descarga el repositorio en formato ZIP, descomprímelo y súbelo a tu entorno de Jupyter Online.
+
+---
+
+## Opción 3: Jupyter Notebook (instalación local)
+
+1. Abre una terminal (CMD en Windows, Terminal en macOS o Linux).
+
+2. Clona el repositorio:
+
+```bash
+git clone https://github.com/JasmanikTL/telecom-analysis.git
+```
+
+3. Accede a la carpeta del proyecto:
 
 ```bash
 cd telecom-analysis
 ```
 
-3. Instalar las dependencias:
-
-```bash
-pip install pandas numpy matplotlib seaborn
-```
-
-4. Abrir el notebook:
+4. Inicia Jupyter Notebook:
 
 ```bash
 jupyter notebook
 ```
 
-5. Ejecutar todas las celdas en orden.
+5. Abre el archivo `telecom_analysis.ipynb`.
 
----
-
-## Opción 2: Google Colab
-
-1. Descargar el repositorio o clonarlo desde GitHub.
-2. Subir el notebook a Google Colab.
-3. Subir la carpeta **datasets** al entorno de Colab.
-4. Verificar que las rutas de lectura de los archivos correspondan a la ubicación de los datasets.
-5. Ejecutar todas las celdas del notebook.
-
----
+6. Ejecuta todas las celdas del notebook en orden.
 
 # 🔄 Guía de reproducción
 
