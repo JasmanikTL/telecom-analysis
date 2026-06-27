@@ -97,50 +97,28 @@ telecom-analysis/
 
 ## Opción 1: Google Colab
 
-### Usando Git (recomendado)
-
-1. Abre Google Colab.
-2. Abre una celda y clona el repositorio:
-
-```bash
-!git clone https://github.com/JasmanikTL/telecom-analysis.git
-```
-
-3. Accede a la carpeta del proyecto:
-
-```python
-%cd telecom-analysis
-```
-
-4. Abre el archivo `telecom_analysis.ipynb`.
-5. Ejecuta todas las celdas del notebook.
-
-> **Alternativa:** Si no deseas usar Git, descarga el repositorio en formato ZIP, descomprímelo y sube el notebook junto con la carpeta `datasets` a Google Colab.
+1. Clona el repositorio en tu computadora o descárgalo desde GitHub en formato **ZIP**.
+2. Si descargaste el repositorio como ZIP, descomprímelo.
+3. Abre **Google Colab**.
+4. Selecciona **Archivo → Subir notebook** y carga el archivo `telecom_analysis.ipynb`.
+5. Sube la carpeta `datasets` (o los archivos `plans.csv`, `users_latam.csv` y `usage.csv`) al entorno de Colab.
+6. Ejecuta todas las celdas del notebook en orden.
 
 ---
 
 ## Opción 2: Jupyter Online
 
-### Usando Git (recomendado)
-
-1. Abre tu entorno de Jupyter Online.
-2. Clona el repositorio:
-
-```bash
-git clone https://github.com/JasmanikTL/telecom-analysis.git
-```
-
-3. Abre la carpeta `telecom-analysis`.
-4. Abre `telecom_analysis.ipynb`.
-5. Ejecuta todas las celdas.
-
-> **Alternativa:** Descarga el repositorio en formato ZIP, descomprímelo y súbelo a tu entorno de Jupyter Online.
+1. Clona el repositorio en tu computadora o descárgalo desde GitHub en formato **ZIP**.
+2. Si descargaste el repositorio como ZIP, descomprímelo.
+3. Abre tu entorno de **Jupyter Online**.
+4. Sube el archivo `telecom_analysis.ipynb` y la carpeta `datasets`.
+5. Ejecuta todas las celdas del notebook en orden.
 
 ---
 
 ## Opción 3: Jupyter Notebook (instalación local)
 
-1. Abre una terminal (CMD en Windows, Terminal en macOS o Linux).
+1. Abre una terminal (CMD en Windows, PowerShell, Terminal en macOS o Linux).
 
 2. Clona el repositorio:
 
